@@ -4,3 +4,9 @@ title: "YankeeFlatline's Dominions 5 Game Journal" # the name of your site, e.g.
 collections:
   games:
     output: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
