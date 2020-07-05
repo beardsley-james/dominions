@@ -2,7 +2,7 @@
 layout: games
 title: DE Struction
 listCategory: de_struction
-tags: ulm ma newbie de modded
+tags: ulm ma de modded
 ---
 ## DE_Struction
 ### Mod game
