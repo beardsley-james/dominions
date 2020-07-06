@@ -21,12 +21,12 @@ layout: default
           {% assign articleIndexLength = forloop.length | minus: 1 %}
           <div class="page-navigation">
             {% if currIndex == 0 %}
-              <a class="next0" href="{{ site.url }}{{ site.baseurl }}{{ sorted_articles[nextIndex].url }}">Next</a>
+              <a class="next0" href="{{ sorted_articles[nextIndex].url }}">Next</a>
             {% elsif currIndex < articleIndexLength and currIndex != 0 %}
-              <a class="prev" href="{{ site.url }}{{ site.baseurl }}{{ sorted_articles[prevIndex].url }}">Previous</a>
-              <a class="next" href="{{ site.url }}{{ site.baseurl }}{{ sorted_articles[nextIndex].url }}">Next</a>
+              <a class="prev" href="{{ sorted_articles[prevIndex].url }}">Previous</a>
+              <a class="next" href="{{ sorted_articles[nextIndex].url }}">Next</a>
             {% elsif currIndex == articleIndexLength %}
-              <a class="prev" href="{{ site.url }}{{ site.baseurl }}{{ sorted_articles[prevIndex].url }}">Previous</a>
+              <a class="prev" href="{{ sorted_articles[prevIndex].url }}">Previous</a>
             {% endif %}
           </div>
         {% endif %}
